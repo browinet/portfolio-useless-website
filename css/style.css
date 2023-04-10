@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Press+Start+2P&display=swap");
+
+body {
+  margin: 0;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Press Start 2P", cursive;
+}
+
+/*---------  ICON SECTION ---------*/
+
+.icon-contanier img:nth-of-type(n) {
+  width: 50;
+  height: 50px;
+  padding: 10px 10px;
+}
+
+/*---------  DICE SECTION  ---------*/
+#dice_container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+#diceButtons {
+  display: flex;
+  height: 10%;
+  width: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 20px;
+}
+#diceButtons div {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+#removebutton {
+  visibility: hidden;
+  font: inherit;
+  font-size: 30px;
+  background-color: none;
+  padding: 2px 1px;
+  border: none;
+  background-color: black;
+  color: #f8f8f8;
+}
+#removebutton:active {
+  background-color: rgb(132, 132, 132);
+  color: #f8f8f8;
+}
+#addbutton {
+  font: inherit;
+  font-size: 30px;
+  background-color: none;
+  padding: 2px;
+  border: none;
+  border-radius: 3px;
+  background-color: black;
+  color: #f8f8f8;
+}
+#addbutton:active {
+  background-color: rgb(132, 132, 132);
+  color: #f8f8f8;
+}
+#roll_button {
+  font-family: "Press Start 2P", cursive;
+  background-color: rgb(46, 46, 46);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#dice_layout {
+  height: 70%;
+  width: 90%;
+
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: auto;
+}
+#dice_area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#dice {
+  display: flex;
+  background-color: white;
+  border: grey 2px solid;
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  font-size: 45px;
+  text-align: center;
+  padding: 20px;
+}
+#dice:hover {
+  border: lightcoral 2px solid;
+}
+#dice_div {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/*---------  NUM SECTION  ---------*/
+#numbergen_container {
+  display: none;
+  background-color: #f8f8f8;
+  text-transform: uppercase;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 30px;
+}
+#numbergen_container p {
+  text-align: center;
+}
+#NumArea input {
+  font-family: "Press Start 2P", cursive;
+  width: 200px;
+  height: 75px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#buttonGen {
+  font-family: "Press Start 2P", cursive;
+  background-color: rgb(46, 46, 46);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 30px;
+  font-size: 20px;
+  margin: 30px;
+}
+#num_result {
+  text-align: center;
+}
+/*---------  TIMER SECTION  ---------*/
+#timer_container {
+  display: flex;
+  background-color: #f8f8f8;
+  text-transform: uppercase;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 30px;
+}
+#timeArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#timeArea div {
+  padding: 5px;
+}
+#timeArea label {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+#timeArea input {
+  font-family: "Press Start 2P", cursive;
+  width: 200px;
+  height: 75px;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+}
+
+#timeArea input:hover {
+  background-color: lightcoral 2px solid;
+}
+#startButton {
+  font-family: "Press Start 2P", cursive;
+  background-color: rgb(46, 46, 46);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 30px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+#stopButton {
+  font-family: "Press Start 2P", cursive;
+  background-color: rgb(46, 46, 46);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 30px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+#restartButton {
+  font-family: "Press Start 2P", cursive;
+  background-color: rgb(46, 46, 46);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 30px;
+  margin-top: 30px;
+  font-size: 20px;
+}
